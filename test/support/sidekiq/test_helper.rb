@@ -1,5 +1,6 @@
 require 'sidekiq/launcher'
 require 'sidekiq/cli'
+require File.expand_path('workers/not_an_active_job_worker', __dir__)
 
 Sidekiq.logger = Logger.new(nil)
 
